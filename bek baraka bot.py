@@ -15,7 +15,9 @@ from telebot import types
 # TOKEN
 # =====================================================
 
-BOT_TOKEN = "8978476082:AAF7G9aaFldJ3VnxrYqZvZdyKZq3la-Vdn8"
+import os
+token ="8978476082:AAF7G9aaFldJ3VnxrYqZvZdyKZq3la-Vdn8"
+os getenv("Bot_token
 
 if BOT_TOKEN == "TOKENINGNI_SHU_YERGA_QOY":
     raise ValueError("❌ BOT_TOKEN ni haqiqiy token bilan almashtiring!")
