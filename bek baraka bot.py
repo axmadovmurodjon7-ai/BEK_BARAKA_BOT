@@ -17,10 +17,8 @@ from telebot import types
 import os
 
 token = os.getenv("BOT_TOKEN")
-
-if BOT_TOKEN == "TOKENINGNI_SHU_YERGA_QOY":
-    raise ValueError("❌ BOT_TOKEN ni haqiqiy token bilan almashtiring!")
-
+if not token:
+    raise ValueError("BOT_TOKEN topilmadi")
 bot = telebot.TeleBot(
     BOT_TOKEN,
     parse_mode="HTML",
