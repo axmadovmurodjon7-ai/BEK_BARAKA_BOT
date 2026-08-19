@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import sqlite3
 import threading
 import re
@@ -17,10 +10,12 @@ from telebot import types
 import os
 
 token = os.getenv("BOT_TOKEN")
+
 if not token:
     raise ValueError("BOT_TOKEN topilmadi")
+
 bot = telebot.TeleBot(
-    BOT_TOKEN,
+    token,
     parse_mode="HTML",
     threaded=True
 )
