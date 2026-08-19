@@ -14,10 +14,9 @@ from telebot import types
 # =====================================================
 # TOKEN
 # =====================================================
-
 import os
-token =
-os getenv("Bot_token")
+
+token = os.getenv("BOT_TOKEN")
 
 if BOT_TOKEN == "TOKENINGNI_SHU_YERGA_QOY":
     raise ValueError("❌ BOT_TOKEN ni haqiqiy token bilan almashtiring!")
